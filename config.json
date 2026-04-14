@@ -16,7 +16,7 @@
 
 "id": "d2cb8181-233c-4d18-9972-
 
-8a1b04db0144",
+8a1b04db8544",
 
 "level": 0
 
@@ -34,7 +34,29 @@
 
 "wsSettings": {
 
-"path": "/persxhf"
+"path": "/api"
+
+}
+
+}
+
+}
+
+1,
+
+"outbounds": [
+
+{
+
+"protocol": "freedom",
+
+"settings": {}
+
+}
+
+]
+
+}"path": "/persxhf"
 
 }
 
