@@ -1,81 +1,29 @@
 {
-
-"Google.com": [
-
+"inbounds": [
 {
-
-"port": 443,
-
+"port": 8080,
 "protocol": "vless",
-
 "settings": {
-
 "clients": [
-
 {
-
-"id": "d2cb8181-233c-4d18-9972-
-
-8a1b04db8544",
-
+"id": "d2cb8181-233c-4d18-9972-8a1b04db4444",
 "level": 0
-
 }
-
-1,
-
+],
 "decryption": "none"
-
 },
-
 "streamSettings": {
-
 "network": "ws",
-
 "wsSettings": {
-
-"path": "/api"
-
+"path": "/we"
 }
-
 }
-
 }
-
-1,
-
+],
 "outbounds": [
-
 {
-
 "protocol": "freedom",
-
 "settings": {}
-
 }
-
 ]
-
-}"path": "/api"
-
-}
-
-}
-
-}
-
-1,
-
-"outbounds": [
-
-{
-
-"protocol": "freedom",
-
-"settings": {}
-
-}
-
-]
-
 }
