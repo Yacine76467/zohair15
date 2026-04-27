@@ -11,7 +11,7 @@
           {
             "address": "104.18.37.127",
             "level": 8,
-            "password": "75659090832",
+            "password": "a9fe5975-780e-41a1-ab69-f6a596z9a356",
             "port": 443
           }
         ]
@@ -27,7 +27,7 @@
           "headers": {
             "Host": "free.sinko.dpdns.org"
           },
-          "path": "/yacin.vip"
+          "path": "/yacine/trojan-ws"
         }
       },
       "tag": "TROJAN"
@@ -35,6 +35,15 @@
   ],
   "policy": {
     "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
+}    "levels": {
       "8": {
         "connIdle": 300,
         "downlinkOnly": 1,
