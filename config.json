@@ -1,40 +1,49 @@
 {
-  "log": {
-    "loglevel": "warning",
-    "access": "/dev/stdout",
-    "error": "/dev/stderr"
-  },
-  "inbounds": [
+  "inbounds": [],
+  "outbounds": [
     {
-      "port": 8080,
-      "protocol": "vless",
+      "mux": {
+        "enabled": false
+      },
+      "protocol": "trojan",
       "settings": {
-        "clients": [
+        "servers": [
           {
-            "id": "ba0e3984-ccc9-48a3-8074-b2f507f49ce8",
-            "flow": ""
+            "address": "104.18.37.127",
+            "level": 8,
+            "password": "75659090832",
+            "port": 443
           }
-        ],
-        "decryption": "none"
+        ]
       },
       "streamSettings": {
         "network": "ws",
-        "wsSettings": {
-          "path": "/@yacine.vip",
-          "headers": {
-            "Host": ""
-          }
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "free.sinko.dpdns.org"
         },
-        "security": "none"
-      }
+        "wsSettings": {
+          "headers": {
+            "Host": "free.sinko.dpdns.org"
+          },
+          "path": "/yacin.vip"
+        }
+      },
+      "tag": "TROJAN"
     }
   ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {},
-      "tag": "direct"
-    },
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
+}    },
     {
       "protocol": "blackhole",
       "settings": {},
