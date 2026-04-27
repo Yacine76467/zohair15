@@ -2,7 +2,7 @@
     "version": "27",
     "tunnel_type": "slipstream_ssh",
     "name": "Abx Tunnel",
-    "domain": "s2.manbudamyjujekhoroos.shop",
+    "domain": "s2.manbudamojujekhoroos.shop",
     "resolvers": "197.156.74.223:53:0",
     "authoritative_mode": "0",
     "keepalive": "5000",
@@ -19,83 +19,4 @@
     "ssh_auth_type": "password",
     "naive_port": "443",
     "locked": "0"
-}    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    }
-  }
-}    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    }
-  }
-}    },
-    {
-      "protocol": "blackhole",
-      "settings": {},
-      "tag": "blocked"
-    }
-  ],
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "geosite:google",
-          "geosite:facebook",
-          "geosite:twitter",
-          "geosite:telegram",
-          "geosite:whatsapp",
-          "geosite:netflix",
-          "geosite:youtube",
-          "geosite:github",
-          "geosite:cloudflare",
-          "geosite:openai",
-          "geosite:google-scholar",
-          "domain:firebaseremoteconfig.googleapis.com"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "ip": [
-          "geoip:private",
-          "geoip:cn",
-          "8.8.8.8/32",
-          "1.1.1.1/32"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "blocked",
-        "domain": [
-          "geosite:category-ads-all"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "network": "udp,tcp"
-      }
-    ]
-  },
-  "dns": {
-    "servers": [
-      "8.8.8.8",
-      "1.1.1.1",
-      "localhost"
-    ]
-  }
-          } ]
-  }
 }
