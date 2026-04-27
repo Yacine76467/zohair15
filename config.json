@@ -9,7 +9,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.18.37.127",
+            "address": "104.18.37.133",
             "level": 8,
             "password": "a9fe5975-780e-41a1-ab69-f6a596z9a356",
             "port": 443
@@ -27,7 +27,7 @@
           "headers": {
             "Host": "free.sinko.dpdns.org"
           },
-          "path": "/yacine/trojan-ws"
+          "path": "/yacine"
         }
       },
       "tag": "TROJAN"
