@@ -43,13 +43,4 @@
       }
     }
   }
-}    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    }
-  }
 }
