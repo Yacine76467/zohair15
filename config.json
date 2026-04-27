@@ -1,22 +1,46 @@
 {
-    "version": "27",
-    "tunnel_type": "slipstream_ssh",
-    "name": "Abx Tunnel",
-    "domain": "s2.manbudamojujekhoroos.shop",
-    "resolvers": "197.156.74.223:53:0",
-    "authoritative_mode": "0",
-    "keepalive": "5000",
-    "congestion": "bbr",
-    "tcp_port": "1080",
-    "tcp_host": "127.0.0.1",
-    "gso": "0",
-    "ssh_enabled": "1",
-    "ssh_user": "yacine",
-    "ssh_pass": "yacine1",
-    "ssh_port": "22",
-    "ssh_host": "127.0.0.1",
-    "dns_transport": "udp",
-    "ssh_auth_type": "password",
-    "naive_port": "443",
-    "locked": "0"
+  "inbounds": [],
+  "outbounds": [
+    {
+      "mux": {
+        "enabled": false
+      },
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.37.127",
+            "level": 8,
+            "password": "a9fe5975-780e-41a1-ab69-f6a596z9a356",
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "free.sinko.dpdns.org"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "free.sinko.dpdns.org"
+          },
+          "path": "/yacine/trojan-ws"
+        }
+      },
+      "tag": "TROJAN"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
 }
