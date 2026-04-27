@@ -9,7 +9,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.18.37.127",
+            "address": "google.com",
             "level": 8,
             "password": "7565909083",
             "port": 443
