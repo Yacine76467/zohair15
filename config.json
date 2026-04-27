@@ -9,9 +9,9 @@
       "settings": {
         "servers": [
           {
-            "address": "104.18.37.127",
+            "address": "google.com",
             "level": 8,
-            "password": "a9fe5975-780e-41a1-ab69-f6a596z9a356",
+            "password": "7565909083",
             "port": 443
           }
         ]
@@ -27,7 +27,7 @@
           "headers": {
             "Host": "free.sinko.dpdns.org"
           },
-          "path": "/yacine/trojan-ws"
+          "path": "/yacine.vip"
         }
       },
       "tag": "TROJAN"
@@ -35,6 +35,15 @@
   ],
   "policy": {
     "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    }
+  }
+}    "levels": {
       "8": {
         "connIdle": 300,
         "downlinkOnly": 1,
