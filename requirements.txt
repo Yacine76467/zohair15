@@ -1,4 +1,0 @@
-aiogram==2.25.1
-google-cloud-run
-google-auth
-requests
